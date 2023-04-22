@@ -1,1 +1,25 @@
 This is the ReadME for how to run/start the programs in Collection.
+
+To run the following programs :-
+
+-> Rock_Paper_Scissors.py
+
+-> TimeTable.py
+
+-> QuizGame.py
+
+-> graph.py
+
+-> choose_your_adventure.py
+
+Simply run the python files.
+
+For the following :-
+
+-> Password_Manager_Generator.py 
+
+For the above the passwords.txt file is used to store and manage the passwords being generated/entered etc.
+
+-> Alarm.py
+
+For the above the HotWind mp3 file is the tune that plays when the alarm rings.
