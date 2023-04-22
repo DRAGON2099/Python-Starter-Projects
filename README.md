@@ -4,6 +4,8 @@ Collection Folder contains Beginner Level Python Starter Projects based on the f
 
 -> A fun Hand Cricket game from our childhood
 
--> Stone-Paper-Scissors which is another classic
+-> Rock-Paper-Scissors which is another classic
 
--> 
+-> A simple Quiz-Game on basic computer science knowledge for kids
+
+-> An alarm in case youre a heavy sleeper
