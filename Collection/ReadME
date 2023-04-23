@@ -23,7 +23,7 @@ For the above the passwords.txt file is used to store and manage the passwords b
 -> Alarm.py
 
 You will require the package playsound
-For the above the HotWind mp3 file is the tune that plays when the alarm rings.
+For the above the HotWind mp3 file is the tune that plays when the alarm rings, Feel free to use you own mp3 file instead.
 
 -> Hand_Cricket 
 
