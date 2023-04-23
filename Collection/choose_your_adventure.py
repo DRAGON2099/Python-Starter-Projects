@@ -1,3 +1,12 @@
+import time
+
+
+print("Welcome to a short Choose Your Adventure Game for a nostalgic wave from the past!")
+print()
+print("Have a Great Time!")
+print()
+time.sleep(0.8)
+
 name = str(input("Enter your character name : "))
 print(f"Welcome to the game fellow adventurer {name}")
 
