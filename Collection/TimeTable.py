@@ -2,6 +2,24 @@ import time
 
 
 # ---------------------------------------------------------------------------------------------
+# Function to add classes
+def class_adder():
+    dict = {}
+    no_of_classes = int(input("Enter No of Classes for this day : "))
+    print()
+    for idx in range(no_of_classes):
+        class_day = input("Enter Name of Class : ")
+        class_duration = input("Enter Timing of Class")
+
+        dict[class_day] = class_duration
+
+    print("So your schedule for that day is :- ")
+    print()
+    print(dict)
+    return dict    
+
+
+# ---------------------------------------------------------------------------------------------
 # Days of the week class checkers
 
 def monday_classes_checker(x):
@@ -112,41 +130,41 @@ def sunday_classes_checker(x):
 # ------------------------------------------------------------------------------------------------------------
 # Days of the week class adding
 def monday_class_adder():
-    print("You will now add classes for monday below :- ")
-    pass
+    print("You will now add classes for Monday below :- ")
+    class_adder()
 
 
 def tuesday_class_adder():
-    print("You will now add classes for monday below :- ")
-    pass
+    print("You will now add classes for Tuesday below :- ")
+    class_adder()
 
 
 def wednesday_class_adder():
-    print("You will now add classes for monday below :- ")
-    pass
+    print("You will now add classes for Wednesday below :- ")
+    class_adder()
 
 
 def thursday_class_adder():
-    print("You will now add classes for monday below :- ")
-    pass
+    print("You will now add classes for Thursday below :- ")
+    class_adder()
 
 
 def friday_class_adder():
-    print("You will now add classes for monday below :- ")
-    pass
+    print("You will now add classes for Friday below :- ")
+    class_adder()
 
 
 def saturday_class_adder():
-    print("You will now add classes for monday below :- ")
-    pass
+    print("You will now add classes for Saturday below :- ")
+    class_adder()
 
 
 def sunday_class_adder():
-    print("You will now add classes for monday below :- ")
-    pass
+    print("You will now add classes for Sunday below :- ")
+    class_adder()
 
 
-# ------------------------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------------------
 # __main__
 
 print('''Welcome to a Basic Time Table Program. You can view and add classes and timings.''')
@@ -181,3 +199,18 @@ thursday_class_tf = thursday_classes_checker(thursday_classes)
 friday_class_tf = friday_classes_checker(friday_classes)
 saturday_class_tf = saturday_classes_checker(saturday_classes)
 sunday_class_tf = sunday_classes_checker(sunday_classes)
+
+if monday_class_tf == 1:
+    monday_class_adder()
+if tuesday_class_tf == 1:
+    tuesday_class_adder()
+if wednesday_class_tf == 1:
+    wednesday_class_adder()
+if thursday_class_tf == 1:
+    thursday_class_adder()
+if friday_class_tf == 1:
+    friday_class_adder()
+if saturday_class_tf == 1:
+    saturday_class_adder()
+if sunday_class_tf == 1:
+    sunday_class_adder()
