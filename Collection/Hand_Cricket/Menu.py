@@ -48,7 +48,7 @@ def menu_choices(x):
     elif x == 4:
         Rules.rules()
     elif x == 5:
-        quit("Hope You had a Great Time! GoodBye!")
+        quit(" Hope You had a Great Time! GoodBye!")
 
 
 # ---------------------------------------------------------------------------------------------------------------------
@@ -56,12 +56,16 @@ def menu_choices(x):
 print('''Welcome to a simple game of Hand Cricket like back in the day. Please select an option from the menu :-''')
 print()
 time.sleep(1)
-menu_choice = int(input('''1) Initiate Toss
- 2) Bat First
- 3) Bowl First
- 4) Rules
- 5) Exit 
+while True:
+    print("\tMENU:-")
+    print()
+    menu_choice = int(input('''    1) Initiate Toss
+    2) Bat First
+    3) Bowl First
+    4) Rules
+    5) Exit 
  
- Your Choice : '''))
+    Your Choice : '''))
 
-menu_choices(menu_choice)
+    menu_choices(menu_choice)
+    print()
