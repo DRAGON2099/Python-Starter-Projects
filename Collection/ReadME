@@ -19,6 +19,7 @@ For the following :-
 -> Password_Manager_Generator.py 
 
 For the above the passwords.txt file is used to store and manage the passwords being generated/entered etc.
+You will require the package cryptography which can be simply done via pip install cryptography in the terminal.
 
 -> Alarm.py
 
