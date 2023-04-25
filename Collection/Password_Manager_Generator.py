@@ -1,16 +1,33 @@
 import time
 import random
 import string
+from cryptography.fernet import Fernet
 
+def load_key():
+    file = open("key.key", "rb")
+    key = file.read()
+    file.close()
+    return key
 
 master_pwd = input("Enter Master password : ")
+key = load_key() + master_pwd.encode()
+fer = Fernet(key)
 
+# comment out this function after the first use
+def write_key():
+    key = Fernet.generate_key()
+    with open("key.key", "wb") as key_file:
+        key_file.write(key)
+
+write_key()
 
 def view():
 
     with open('passwords.txt', 'r') as f:
         for line in f.readlines():
-            print(line)
+            data = line.rstrip()
+            user, passw = data.split("|")
+            print("User: ", user, "Password: ", str(fer.decrypt(passw.encode())))
 
 
 def enter():
@@ -18,7 +35,7 @@ def enter():
     pwd = input("Enter Password : ")
 
     with open('passwords.txt', 'a') as f:
-        f.write("Name of Account : " + name + "\n" + f"Password of {name} Account : " + pwd + "\n")
+        f.write("Name of Account : " + name + "\n" + f"Password of {name} Account : " + str(fer.encrypt(pwd.encode())) + "\n")
 
 
 def generate_password():
